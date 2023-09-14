@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// switch
 int main(void)
 {
 	int score = 0;
