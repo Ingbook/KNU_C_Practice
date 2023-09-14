@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//±¸±¸´Ü
 int main(void)
 {
 	int i = 2;
