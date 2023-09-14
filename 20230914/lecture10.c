@@ -1,4 +1,4 @@
-// 备备窜
+// 备备窜 - for
 #include <stdio.h>
 
 int main(void)
