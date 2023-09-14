@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// if-else
 int main(void)
 {
 	int score = 0;
