@@ -42,7 +42,8 @@ int div(num1, num2)
 
 void calculator(int sel, int num1, int num2)
 {
-	
+	if (sel < 1 || sel > 4)
+		printf("¿À·ù");
 	if (sel == 1) sum(num1, num2);
 	else if (sel == 2) sub(num1, num2);
 	else if (sel == 3) mul(num1, num2);
