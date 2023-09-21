@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int flag = 1;
-int prime(num);
+int prime(int num);
 
 int main(void)
 {
@@ -16,7 +16,7 @@ int main(void)
 	return 0;
 }
 
-int prime(num)
+int prime(int num)
 {
 	for (int j = 2; j <= num; j++)
 	{
