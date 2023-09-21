@@ -20,22 +20,22 @@ int main(void)
 	return 0;
 }
 
-int sum(num1, num2)
+int sum(int num1, int num2)
 {
 	return num1 + num2;
 }
 
-int sub(num1, num2)
+int sub(int num1, int num2)
 {
 	return num1 - num2;
 }
 
-int mul(num1, num2)
+int mul(int num1, int num2)
 {
 	return num1 * num2;
 }
 
-int div(num1, num2)
+int div(int num1, int num2)
 {
 	return num1 / num2;
 }
