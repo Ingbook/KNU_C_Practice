@@ -14,18 +14,16 @@ int main(void)
 
     srand(time(NULL));
 
-    while (count < 1000000000) // 10억 회 반복
+    while (count < 1000000000) 
     {
         x = (double)rand() / (double)RAND_MAX * 2 - 1;
         y = (double)rand() / (double)RAND_MAX * 2 - 1;
 
-        // 원 안에 들어간 점인지 확인
         if (sqrt(pow(x, 2) + pow(y, 2)) < 1.0)
             circle++;
 
         count++;
 
-        // 1000만 회마다 원주율과 진행 상황 출력
         if (count % 10000000 == 0) {
             progress++;
             percentage++;
