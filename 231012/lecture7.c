@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void swap(int* a, int* b);
-void sort(int arr[], int N);
+void sort(int* arr, int N);
 
 int main(void)
 {
@@ -27,17 +28,14 @@ void swap(int* a, int* b)
 	*b = temp;
 }
 
-void sort(int arr[], int N)
+void sort(int* arr, int N)
 {
-	for (int i = 0; i < N - 1; i++) {
-		int min = i;
+	for (int i = 0; i < N; i++) {
+		int standard = arr[i];
 		for (int j = i + 1; j < N; j++) {
-			if (arr[j] < arr[min]) {
-				min = j;
+			if (arr[j] < arr[i]) {
+				swap(&arr[j], &arr[i]);
 			}
-		}
-		if (min != i) {
-			swap(&arr[i], &arr[min]);
 		}
 	}
 
