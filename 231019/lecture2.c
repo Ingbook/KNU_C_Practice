@@ -23,5 +23,6 @@ int main(void)
 	}
 	printf("Æò±Õ Á¡¼ö : %.2f", (sum / N));
 
+	free(student);
 	return 0;
 }
